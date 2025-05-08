@@ -1,0 +1,36 @@
+﻿# Build results
+bin/
+obj/
+out/
+publish/
+
+# User-specific files
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# VS Code settings
+.vscode/
+
+# ASP.NET secrets (if used)
+secrets.json
+
+# App configuration
+appsettings.json
+appsettings.*.json
+.env
+
+# Logs
+*.log
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Package managers
+packages/
+*.nupkg
+
+# Dependency caches
+node_modules/
