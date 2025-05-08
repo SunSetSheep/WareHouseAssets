@@ -1,0 +1,66 @@
+﻿@page
+@model WareHouseAssets.Pages.EditModel
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit</h1>
+
+<h4>Asset</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Asset.Id" />
+            <div class="form-group">
+                <span class="text-danger">*</span>
+                <label asp-for="Asset.Name" class="control-label"></label>
+                <input asp-for="Asset.Name" class="form-control" />
+                <span asp-validation-for="Asset.Name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <span class="text-danger">*</span>
+                <label asp-for="Asset.Number_In_Stock" class="control-label"></label>
+                <input asp-for="Asset.Number_In_Stock" class="form-control" />
+                <span asp-validation-for="Asset.Number_In_Stock" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <span class="text-danger">*</span>
+                <label asp-for="Asset.Supplier" class="control-label"></label>
+                <input asp-for="Asset.Supplier" class="form-control" />
+                <span asp-validation-for="Asset.Supplier" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <span class="text-danger">*</span>
+                <label asp-for="Asset.Image" class="control-label"></label>
+                <input asp-for="Asset.Image" class="form-control" />
+                <span asp-validation-for="Asset.Image" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <span class="text-danger">*</span>
+                <label asp-for="Asset.Department" class="control-label"></label>
+                <input asp-for="Asset.Department" class="form-control" />
+                <span asp-validation-for="Asset.Department" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <span class="text-danger">*</span>
+                <label asp-for="Asset.LastUpdated" class="control-label"></label>
+                <input asp-for="Asset.LastUpdated" class="form-control" />
+                <span asp-validation-for="Asset.LastUpdated" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="./Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
