@@ -28,8 +28,8 @@ body {
     margin-bottom: 20px;
 }
 
-.nav-item .nav-link{
-    font-family:Helvetica;
+.nav-item .nav-link {
+    font-family: Segoe UI;
     color: white !important;
     font-size: large;
     margin-right: 50px;
@@ -93,12 +93,23 @@ button.accept-policy {
 /*Index Page CSS*/
 .Headings {
     text-align: center;
-    font-family: Helvetica;
-    
+    font-family: Segoe UI;
+    margin-bottom: 10px;
+    color: #333;
 }
 
-.card-body{
-    font-family: Garamond;
+.card {
+    border-radius: 25px;
+}
+
+.card-body {
+    font-family: Tahoma;
     text-align: center;
+    font-size: larger;
+    color: #333;
+}
+
+.carousel-inner{
+    border-radius: 25px;
 }
 
